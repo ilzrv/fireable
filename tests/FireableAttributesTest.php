@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Event;
 
 class FireableAttributesTest extends TestCase
 {
-    public function testSetAnyValue()
+    public function testSetAnyValue(): void
     {
         Event::fake(EmailUpdated::class);
 
@@ -20,7 +20,7 @@ class FireableAttributesTest extends TestCase
         Event::assertDispatched(EmailUpdated::class);
     }
 
-    public function testSetExpectedValue()
+    public function testSetExpectedValue(): void
     {
         Event::fake(StatusApproved::class);
 
