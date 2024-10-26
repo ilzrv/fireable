@@ -35,4 +35,4 @@ jobs:
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "phpunit/phpunit:${{ matrix.phpunit }}" --no-interaction --no-update
           composer update --prefer-stable --prefer-dist --no-interaction
       - name: Execute tests
-        run: php vendor/bin/phpunit --printer "${{ matrix.phpunit_printer }}" tests/
+        run: vendor/bin/phpunit
