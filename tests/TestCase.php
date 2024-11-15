@@ -22,7 +22,7 @@ abstract class TestCase extends BaseTestCase
      *
      * @param  \Illuminate\Foundation\Application  $app
      */
-    protected function getEnvironmentSetUp($app)
+    protected function getEnvironmentSetUp($app): void
     {
         $app['path.base'] = __DIR__.'/../src';
 
@@ -50,7 +50,7 @@ abstract class TestCase extends BaseTestCase
      *
      * @param  \Illuminate\Foundation\Application  $app
      */
-    protected function setUpDatabase($app)
+    protected function setUpDatabase($app): void
     {
         $this->loadMigrationsFrom([
             '--database' => 'testbench',
