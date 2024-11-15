@@ -12,7 +12,7 @@ An elegant way to trigger events based on attributes changes.
 Install package through Composer
 
 ``` bash
-$ composer require envant/fireable
+composer require ilzrv/fireable
 ```
 
 ## Usage
@@ -60,7 +60,7 @@ Please see the [changelog](changelog.md) for more information on what has change
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Contributing
